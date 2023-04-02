@@ -1,0 +1,189 @@
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.header-wrapper {
+    border-bottom: 1px solid #828282;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+header nav ul li a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #828282;
+    text-decoration: unset;
+}
+header nav ul li a.active-link {
+    color: #070707;
+}
+.main_photo {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    align-items: center;
+    line-height: 65.37px;
+}
+.main_photo img {
+    width: 970px;
+    top: 110px;
+}
+.main_photo h1 {
+    margin-bottom: 50px;
+}
+.about_me {
+    padding: 100px 0;
+    background-color: #F6F6F6;
+}
+.about_me_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 50px;
+}
+.about_me_subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 30px;
+}
+.about_me_subtitle_last {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+}
+.skills {
+    padding: 100px 0 ;
+}
+.skills .title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-top: 100px;
+}
+.skills .subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    margin: 20px 0 50px 0;
+}
+.skills .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+}
+.portfolio {
+    padding: 100px 0 0 0;
+}
+.portfolio .title1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.mark1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.mark2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.contacts {
+    padding: 100px 0 ;
+}
+.contacts .title2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #070707;
+    margin-top: 100px;
+}
+.contacts .subtitle2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    margin: 20px 0 60px 0;
+}
+.contacts .item2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contacts .item3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 100px;
+}
