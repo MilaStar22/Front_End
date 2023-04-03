@@ -1,0 +1,282 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    position: absolute;
+    width: 1200px;
+    height: 54px;
+    left: 120px;
+    top: 13px;
+    display: flex;
+    flex-direction: row;
+}
+.header .text-box {
+    position: absolute;
+    width: 50px;
+    height: 20.38px;
+    top: 16px;
+    left: 0px;
+}
+.header .text-box p {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.header .logo {
+    position: absolute;
+    width: 238px;
+    height: 54px;
+    top: 13px;
+    left: 962px;
+}
+.header .navigation {
+    position: absolute;
+    width: 261px;
+    height: 20px;
+    top: 13px;
+    left: 100px;
+    gap: 10px;
+}
+.header .navigation span {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.background-img {
+    position: absolute;
+    top: 150px;
+    left: 832px;
+    z-index: -1;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 3001px;
+}
+.main {
+    position: relative;
+    width: 785px;
+    height: 2931px;
+    top: 150px;
+    left: 535px;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 385px;
+    height: 462px;
+    top: 150px;
+    left: 120px;
+}
+div.column {
+    width: 380px;
+    height: 58px;
+    border-bottom: 2px solid rgb(147, 145, 145);
+    margin-bottom: 70px;
+}
+.column:last-child {
+    margin-bottom: 10px;
+}
+.main .chapter-1 {
+    position: absolute;
+    width: 785px;
+    height: 308px;
+}
+.title {
+    position: relative;
+    height: 48px;
+    left: 0;
+    top: 20px;
+    letter-spacing: 10px;
+}
+.chapter-1 .title {
+    width: 234px;
+}
+.title h2 {
+    position: absolute;
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.chapter-1 .title h2 {
+    width: 234px;
+}
+.p_in_chap1 {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 244px;
+    top: 0px;
+}
+.chapter-1 .title p, .chapter-2 .title p,
+.chapter-3 .title p, .chapter-4 .title p {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+.paragraph-1 p {
+    position: absolute;
+    width: 785px;
+    height: 192px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    top: 116px;
+}
+span.underline {
+    text-decoration: underline;
+}
+span.bold {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+span.marked {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    background-color: rgb(224, 219, 219);
+}
+.main .chapter-2 {
+    position: absolute;
+    width: 785px;
+    height: 452px;
+    top: 378px;
+}
+.chapter-2 .title {
+    width: 420px;
+}
+.chapter-2 .title h2 {
+    width: 370px;
+}
+.p_in_chap2 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 320px;
+    top: 0px;
+}
+.paragraph-2 p {
+    position: absolute;
+    width: 785px;
+    height: 336px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    top: 116px;
+}
+span.italic {
+    font-style: italic;
+}
+.main .chapter-3 {
+    position: absolute;
+    width: 785px;
+    height: 1331px;
+    top: 900px;
+}
+.chapter-3 .title {
+    width: 477px;
+}
+.chapter-3 .title h2 {
+    width: 400px;
+}
+.p_in_chap3 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 377px;
+    top: 0px;
+}
+.paragraph-3-1 p, .paragraph-3-2 p, .paragraph-3-3 p,
+.paragraph-3-4 p, .paragraph-3-5 p, .paragraph-3-6 p,
+.paragraph-3-7 p, .paragraph-4-1 p, .paragraph-4-2 p {
+    position: absolute;
+    width: 785px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.paragraph-3-1 p {
+    height: 132px;
+    top: 116px;
+}
+.paragraph-3-2 p {
+    height: 41px;
+    top: 341px;
+}
+.paragraph-3-3 p {
+    height: 134px;
+    top: 422px;
+}
+.paragraph-3-4 p {
+    height: 135px;
+    top: 596px;
+}
+.paragraph-3-5 p {
+    height: 192px;
+    top: 771px;
+}
+.paragraph-3-6 p {
+    height: 48px;
+    top: 1003px;
+}
+.paragraph-3-7 p {
+    height: 240px;
+    top: 1091px;
+}
+.main .chapter-4 {
+    position: absolute;
+    width: 785px;
+    height: 540px;
+    top: 2301px;
+}
+.chapter-4 .title {
+    width: 465px;
+}
+.chapter-4 .title h2 {
+    width: 385px;
+}
+.p_in_chap4 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 365px;
+    top: 0px;
+}
+.paragraph-4-1 p {
+    height: 192px;
+    top: 116px;
+}
+.paragraph-4-2 p {
+    height: 192px;
+    top: 348px;
+}
