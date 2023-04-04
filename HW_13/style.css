@@ -1,0 +1,271 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+}
+.form-wrapper {
+    position: absolute;
+    width: 1170px;
+    height: 590px;
+    top: 55px;
+    left: 135px;
+    bottom: 55px;
+    right: 135px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+}
+.create-account {
+    position: absolute;
+    width: 570px;
+    height: 590px;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+}
+.title {
+    position: absolute;
+    top: 35px;
+    left: 36px;
+    width: 199px;
+    height: 32px;
+}
+.create-account h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+.first-name {
+    position: absolute;
+    width: 245px;
+    height: 67px;
+    top: 87px;
+    left: 34px;
+}
+.last-name {
+    position: absolute;
+    width: 245px;
+    height: 67px;
+    top: 87px;
+    left: 291px;
+}
+label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+input {
+    box-sizing: border-box;
+    width: 245px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #b3b5b7;
+    border-radius: 6px;
+    margin-top: 7px;
+}
+input:focus {
+    border: 1px solid #0b65d4;
+}
+.email {
+    position: absolute;
+    width: 500px;
+    height: 67px;
+    top: 174px;
+    left: 36px;
+}
+.email input {
+    width: 500px;
+    margin-bottom: 7px;
+}
+.email p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+    margin-bottom: 20px;
+}
+.radio-bottom {
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    top: 286px;
+    left: 36px;
+}
+.radio-bottom-female {
+    position: absolute;
+    left: 118px;
+    top: 0;
+    width: 48px;
+    height: 22px;
+}
+/* container */
+.radio-bottom label {
+    display: block;
+    margin-bottom: 20px;
+    position: relative; /* to contain absolute elements */
+    padding-left: 22px; /* free space for custom radio button */
+    cursor: pointer;
+}
+  /* hide default radio button  */
+.radio-bottom label input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width:0; 
+    height:0;
+}
+  /* custom radio button */
+.radio-bottom label span {
+    position: absolute;
+    /* position to the free space in <label> */
+    top:0;
+    left:0;
+    width:16px; 
+    height:16px;
+    background-color: white;
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 50%;
+    transition: .3s background-color;
+}
+  /* the check icon */
+.radio-bottom label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    /* middle */
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#fff;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+}
+.radio-bottom label:hover span {
+    background-color: #ccc;
+}  
+.radio-bottom label input:checked ~ span {
+    background-color: #007BFF;
+}
+.radio-bottom label input:checked ~ span:after {
+    display:block;
+}
+.country {
+    position: absolute;
+    width: 245px;
+    height: 39px;
+    top: 328px;
+    left: 36px;
+    margin-bottom: 20px;
+}
+.country select {
+    box-sizing: border-box;
+    width: 245px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #b3b5b7;
+    border-radius: 6px;
+    margin-top: 7px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    padding-left: 7px;
+    /* remove arrow from select tag */
+    -webkit-appearance: none;
+}
+.country svg {
+    position: absolute;
+    top: 37px;
+    left: 218px;
+    fill: rgb(195, 188, 188);
+    stroke: none;
+    width: 15px;
+    height: 20px;
+}
+.city {
+    position: absolute;
+    width: 245px;
+    height: 39px;
+    top: 328px;
+    left: 291px;
+}
+.submit {
+    position: absolute;
+    width: 500px;
+    height: 38px;
+    top: 415px;
+    left: 36px;
+}
+.submit input {
+    width: 500px;
+    margin-bottom: 22px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 15px;
+}
+.terms {
+    position: absolute;
+    width: 410px;
+    height: 36px;
+    left: 81px;
+    top: 475px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+.terms a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+    width: 81px;
+    height: 18px;
+    margin: 4px 10px;
+}
+.break {
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    border-bottom: 2px solid #E4E4E4;
+    top: 531px;
+    left: 36px;
+    margin-bottom: 20px;
+}
+.login {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 552px;
+    left: 196px;
+    width: 177px;
+    height: 22px;
+    gap: 20px;
+}
+.login p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    align-self: start;
+}
+.login a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+    align-self: end;
+}
