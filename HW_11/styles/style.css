@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "Tourney";
+    src: url(../fonts/Tourney.ttf);
+}
+@font-face {
+    font-family: "Staatliches";
+    src: url(../fonts/Staatliches.ttf);
+}
+@font-face {
+    font-family: "Farro";
+    src: url(../fonts/Farro.ttf);
+}
+@font-face {
+    font-family: "FrancoisOne";
+    src: url(../fonts/FrancoisOne.ttf);
+}
+@font-face {
+    font-family: "PTSans-Bold";
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+@font-face {
+    font-family: "PTSans-Regular";
+    src: url(../fonts/PTSans-Regular.ttf);
+}
 .container {
     max-width: 1440px;
     width: 100%;
@@ -78,15 +102,18 @@
     top: 0;
     letter-spacing: 10px;
 }
-.chapter-1 .title h2 {
+.chapter-1 .title h2, .chapter-2 .title h2, 
+.chapter-3 .title h2, .chapter-4 .title h2 {
     position: absolute;
-    font-family: 'Francois One';
+    font-family: 'FrancoisOne';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+.chapter-1 .title h2 {
     width: 244px;
 }
 .p_in_chap1 {
@@ -103,27 +130,29 @@
     line-height: 30px;
     letter-spacing: 0.04em;
 }
-.paragraph-1 p {
+.paragraph-1 p, .paragraph-2 p {
     position: absolute;
     width: 1200px;
-    height: 133px;
-    font-family: 'PT Sans';
+    font-family: 'PTSans-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-    line-height: 48px;
+    line-height: 48px; 
+}
+.paragraph-1 p {
+    height: 133px;
     top: 88px;
 }
 span.underline {
     text-decoration: underline;
 }
 span.bold {
-    font-family: 'PT Sans';
+    font-family: 'PTSans-Bold';
     font-style: normal;
     font-weight: 700;
 }
 span.marked {
-    font-family: 'PT Sans';
+    font-family: 'PTSans-Regular';
     font-style: normal;
     font-weight: 400;
     background-color: rgb(224, 219, 219);
@@ -143,14 +172,6 @@ span.marked {
     letter-spacing: 10px;
 }
 .chapter-2 .title h2 {
-    position: absolute;
-    font-family: 'Francois One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     width: 370px;
 }
 .p_in_chap2 {
@@ -168,14 +189,7 @@ span.marked {
     letter-spacing: 0.04em;
 }
 .paragraph-2 p {
-    position: absolute;
-    width: 1200px;
     height: 230px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
     top: 88px;
 }
 span.italic {
@@ -196,14 +210,6 @@ span.italic {
     letter-spacing: 10px;
 }
 .chapter-3 .title h2 {
-    position: absolute;
-    font-family: 'Francois One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     width: 400px;
 }
 .p_in_chap3 {
@@ -220,86 +226,43 @@ span.italic {
     line-height: 30px;
     letter-spacing: 0.04em;
 }
-.paragraph-3-1 p {
-    position: absolute;
-    width: 1200px;
-    height: 132px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    top: 88px;
-}
-.paragraph-3-2 p {
-    position: absolute;
-    width: 1200px;
-    height: 39px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    top: 260px;
-}
-.paragraph-3-3 p {
-    position: absolute;
-    width: 1200px;
-    height: 86px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    top: 339px;
-}
-/* .paragraph-3-3 a, .paragraph-3-4 a, .paragraph-3-6 a {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-} */
-.paragraph-3-4 p {
-    position: absolute;
-    width: 1200px;
-    height: 86px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    top: 475px;
-}
-.paragraph-3-5 p {
-    position: absolute;
-    width: 1200px;
-    height: 86px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    top: 601px;
-}
-.paragraph-3-6 p {
-    position: absolute;
-    width: 1200px;
-    height: 86px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    top: 783px;
-}
+.paragraph-3-1 p, .paragraph-3-2 p, .paragraph-3-3 p,
+.paragraph-3-4 p, .paragraph-3-5 p, .paragraph-3-6 p,
 .paragraph-3-7 p {
     position: absolute;
     width: 1200px;
-    height: 86px;
-    font-family: 'PT Sans';
+    font-family: 'PTSans-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 48px;
+}
+.paragraph-3-1 p {
+    height: 132px;
+    top: 88px;
+}
+.paragraph-3-2 p {
+    height: 39px;
+    top: 260px;
+}
+.paragraph-3-3 p {
+    height: 86px;
+    top: 339px;
+}
+.paragraph-3-4 p {
+    height: 86px;
+    top: 475px;
+}
+.paragraph-3-5 p {
+    height: 86px;
+    top: 601px;
+}
+.paragraph-3-6 p {
+    height: 86px;
+    top: 783px;
+}
+.paragraph-3-7 p {
+    height: 86px;
     top: 859px;
 }
 .main .chapter-4 {
@@ -317,14 +280,6 @@ span.italic {
     letter-spacing: 10px;
 }
 .chapter-4 .title h2 {
-    position: absolute;
-    font-family: 'Francois One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     width: 385px;
 }
 .p_in_chap4 {
@@ -341,25 +296,20 @@ span.italic {
     line-height: 30px;
     letter-spacing: 0.04em;
 }
-.paragraph-4-1 p {
+.paragraph-4-1 p, .paragraph-4-2 p {
     position: absolute;
     width: 1200px;
-    height: 393px;
-    font-family: 'PT Sans';
+    font-family: 'PTSans-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 48px;
+}
+.paragraph-4-1 p {
+    height: 393px;
     top: 88px;
 }
 .paragraph-4-2 p {
-    position: absolute;
-    width: 1200px;
     height: 132px;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
     top: 261px;
 }
