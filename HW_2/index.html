@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain trip</title>
+    <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #d3aeae;
+        }
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: right;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .background {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .background img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .section1 {
+            float: left;
+            width: 20%;
+            text-align: center;
+            background-color: #d3aeae;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+        .table {
+            width: 100%;
+            text-align: center;
+        }
+        .article1 {
+            width: 90%;
+            padding: auto;
+
+        }
+        .footer {
+            width: 100%;
+            text-align: center;
+            background-color: #e9c8ce;
+            overflow: hidden;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="tab">
+            <button><a href="#footer">Find us</a></button>
+            <button>Contacts</button>
+            <button>About us</button>
+        </div>
+    </header>
+    <div class="background">
+        <img src="images/img_mountains_wide.jpg" alt="mountain view" width="80%"> 
+        <form>
+            <input type="search", placeholder="Find smth" width="100px" height="30px">
+            <button type="submit">Submit</button>
+        </form>   
+    </div>
+    <section class="section1">
+        <button><a href="#">Mountain views</a></button>
+        <button><a href="#">Camps</a></button>
+        <button><a href="#">Location</a></button>
+    </section>
+    <article>
+        <h3><a href="https://www.nationalgeographic.com/science/article/mountains">
+            How Are Mountains Formed?</a>
+        </h3>
+        <p class="article1">
+            <img src="images/Volcan_mount.jpeg" alt="Volcanic mountain" style="float:right;width:442px;height:342px;"> 
+            The world's <strong>tallest mountain </strong>ranges form when pieces of Earth's crust—called plates—smash against each other in a process called plate tectonics, and buckle up like the hood of a car in a head-on collision. The Himalaya in Asia formed from one such massive wreck that started about 55 million years ago. Thirty of the world’s highest mountains are in the Himalaya. The summit of Mount Everest, at 29,035 feet (8,850 meters), is the highest point on Earth.<br><br>
+            The tallest mountain measured from top to bottom is Mauna Kea, an inactive volcano on the island of Hawaii in the Pacific Ocean. Measured from the base, Mauna Kea stands 33,474 feet (10,203 meters) tall, though it only rises 13,796 feet (4,205 meters) above the sea.<br><br>
+            <strong>Volcanic mountains</strong> form when molten rock from deep inside the Earth erupts through the crust and piles up on itself. The islands of Hawaii were formed by undersea volcanoes, and the islands seen above water today are the remaining volcano tops. Well-known volcanoes on land include Mount St. Helens in Washington State and Mount Fuji in Japan. Sometimes volcanic eruptions break down mountains instead of building them up, like the 1980 eruption that blew the top off Mount St. Helens.<br><br>
+            When magma pushes the crust up but hardens before erupting onto the surface, it forms so-called dome mountains. Wind and rain pummel the domes, sculpting peaks and valleys. Examples include the Black Hills of South Dakota and the Adirondack Mountains of New York. Plateau mountains are similar to dome mountains, but form as colliding tectonic plates push up the land without folding or faulting. They are then shaped by weathering and erosion.<br><br>
+        </p>
+    </article>
+    <table class="table">
+        <caption><b>Mountains variaties:</b></caption>
+        <tr>
+            <td><img src="images/Animals.jpeg" alt="goat in the mountain"></td>
+            <td><img src="images/Fish.jpeg" alt="fish in the river"></td>
+            <td><img src="images/Flowers.jpeg" alt="spring flowers on the top of mountain"></td>
+        </tr>
+    </table>
+    <footer class="footer" id="footer">
+        <p>Find us in: <br>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </p>
+    </footer>
+</body>
+</html>
