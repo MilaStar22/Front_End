@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "Tourney";
+    src: url(../fonts/Tourney.ttf);
+}
+@font-face {
+    font-family: "Staatliches";
+    src: url(../fonts/Staatliches.ttf);
+}
+@font-face {
+    font-family: "Farro";
+    src: url(../fonts/Farro.ttf);
+}
+@font-face {
+    font-family: "FrancoisOne";
+    src: url(../fonts/FrancoisOne.ttf);
+}
+@font-face {
+    font-family: "PTSans-Bold";
+    src: url(../fonts/PTSans-Bold.ttf);
+}
+@font-face {
+    font-family: "PTSans-Regular";
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.content {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.header {
+    position: absolute;
+    width: 1200px;
+    height: 54px;
+    top: 13px;
+    display: flex;
+    flex-direction: row;
+}
+.header .text-box {
+    position: absolute;
+    width: 50px;
+    height: 20.38px;
+    top: 16px;
+    left: 0px;
+}
+.header .text-box p {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.header .logo {
+    position: absolute;
+    width: 238px;
+    height: 54px;
+    top: 13px;
+    left: 962px;
+}
+.header .navigation {
+    position: absolute;
+    width: 261px;
+    height: 20px;
+    top: 13px;
+    left: 100px;
+    gap: 10px;
+}
+.header .navigation span {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.main {
+    position: relative;
+    width: 1200px;
+    height: 2225px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.main .chapter-1 {
+    position: absolute;
+    width: 1200px;
+    height: 221px;
+}
+.chapter-1 .title {
+    position: relative;
+    width: 344px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    letter-spacing: 10px;
+}
+.chapter-1 .title h2, .chapter-2 .title h2, 
+.chapter-3 .title h2, .chapter-4 .title h2 {
+    position: absolute;
+    font-family: 'FrancoisOne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.chapter-1 .title h2 {
+    width: 244px;
+}
+.p_in_chap1 {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 244px;
+    top: 0px;
+}
+.chapter-1 .title p {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+.paragraph-1 p, .paragraph-2 p {
+    position: absolute;
+    width: 1200px;
+    font-family: 'PTSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px; 
+}
+.paragraph-1 p {
+    height: 133px;
+    top: 88px;
+}
+span.underline {
+    text-decoration: underline;
+}
+span.bold {
+    font-family: 'PTSans-Bold';
+    font-style: normal;
+    font-weight: 700;
+}
+span.marked {
+    font-family: 'PTSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    background-color: rgb(224, 219, 219);
+}
+.main .chapter-2 {
+    position: absolute;
+    width: 1200px;
+    height: 318px;
+    top: 291px;
+}
+.chapter-2 .title {
+    position: relative;
+    width: 420px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    letter-spacing: 10px;
+}
+.chapter-2 .title h2 {
+    width: 370px;
+}
+.p_in_chap2 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 320px;
+    top: 0px;
+}
+.chapter-2 .title p {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+.paragraph-2 p {
+    height: 230px;
+    top: 88px;
+}
+span.italic {
+    font-style: italic;
+}
+.main .chapter-3 {
+    position: absolute;
+    width: 1200px;
+    height: 993px;
+    top: 679px;
+}
+.chapter-3 .title {
+    position: relative;
+    width: 420px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    letter-spacing: 10px;
+}
+.chapter-3 .title h2 {
+    width: 400px;
+}
+.p_in_chap3 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 377px;
+    top: 0px;
+}
+.chapter-3 .title p {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+.paragraph-3-1 p, .paragraph-3-2 p, .paragraph-3-3 p,
+.paragraph-3-4 p, .paragraph-3-5 p, .paragraph-3-6 p,
+.paragraph-3-7 p {
+    position: absolute;
+    width: 1200px;
+    font-family: 'PTSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.paragraph-3-1 p {
+    height: 132px;
+    top: 88px;
+}
+.paragraph-3-2 p {
+    height: 39px;
+    top: 260px;
+}
+.paragraph-3-3 p {
+    height: 86px;
+    top: 339px;
+}
+.paragraph-3-4 p {
+    height: 86px;
+    top: 475px;
+}
+.paragraph-3-5 p {
+    height: 86px;
+    top: 601px;
+}
+.paragraph-3-6 p {
+    height: 86px;
+    top: 783px;
+}
+.paragraph-3-7 p {
+    height: 86px;
+    top: 859px;
+}
+.main .chapter-4 {
+    position: absolute;
+    width: 1200px;
+    height: 393px;
+    top: 1742px;
+}
+.chapter-4 .title {
+    position: relative;
+    width: 465px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    letter-spacing: 10px;
+}
+.chapter-4 .title h2 {
+    width: 385px;
+}
+.p_in_chap4 {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 365px;
+    top: 0px;
+}
+.chapter-4 .title p {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+.paragraph-4-1 p, .paragraph-4-2 p {
+    position: absolute;
+    width: 1200px;
+    font-family: 'PTSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.paragraph-4-1 p {
+    height: 393px;
+    top: 88px;
+}
+.paragraph-4-2 p {
+    height: 132px;
+    top: 261px;
+}
