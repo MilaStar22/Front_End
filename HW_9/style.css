@@ -1,0 +1,194 @@
+.wrapper {
+    max-width: 1440px;
+    height: 3709px;
+    margin: 0 auto;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 746px;
+    margin-left: 120px;
+}
+.section-2 .title {
+    align-items: center;
+}
+.container .title h2 {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 539px;
+    height: 88px;
+    left: 451px;
+    top: 0px;
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+}
+.card {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 45px;
+    width: 1200px;
+    height: 175px;
+    top: 137px; 
+    width: 1200px;
+    height: 175px;
+    top: 137px;  
+}
+.card .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 270px;
+    height: 175px;
+}
+.card .icon h3 {
+    height: 27px;
+    left: 0%;
+    right: 37.04%;
+    top: calc(50% - 27px/2 + 6px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2F281E;
+}
+.card .icon p {
+    height: 27px;
+    left: 0%;
+    right: 37.04%;
+    top: calc(50% - 27px/2 + 6px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2F281E;
+}
+.btn-1 {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 635px;
+    top: 382px;
+}
+.btn-1 button {
+    padding: 13px 40px;
+    width: 180px;
+    height: 50px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    font-family: "Figtree";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 209px;
+    margin-top: 1440px;
+    margin-left: 120px;
+    max-width: 1200px;
+    gap: 70px;
+}
+.footer .logo {
+    width: 210px;
+}
+.footer .logo .img {
+    margin-right: 13px;
+}
+.footer .logo .img_ {
+    margin-top: 70px;
+    margin-bottom: -3px;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 200px;
+}
+.footer-menu nav h2 {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+}
+.footer-menu nav ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Montserrat";
+    list-style-type: none;
+}
+.footer-menu nav ul li a {
+    text-decoration: none;
+    color: #544837;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.subscribe h2 {
+    width: 320px;
+    font-family: "Figtree";
+    color: #2F281E;
+}
+.subscribe input {
+    max-width: 340px;
+    padding: 15px 118px 15px 10px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #BCD0E5;
+}
+.subscribe button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 40px;
+    width: 180px;
+    height: 50px;
+    background: #FF9900;
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border: none;
+}
+.subscribe .btn-2 {
+    font-family: "Figtree";
+    font-size: 16px;
+    color: #FFFFFF;
+}
