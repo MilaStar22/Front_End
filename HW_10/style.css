@@ -9,10 +9,10 @@
     top: 120px;
     left: 135px;
 }
-.title {
+/* .title {
     height: 45px;
-}
-.title h2 {
+} */
+h2.title {
     font-family: 'Delius Unicase';
     font-style: normal;
     font-weight: 400;
@@ -20,6 +20,7 @@
     line-height: 45px;
     text-align: center;
     letter-spacing: 0.05em;
+    height: 45px;
 }
 .item1 { grid-area: photo1; }
 .item2 { grid-area: photo2; }
