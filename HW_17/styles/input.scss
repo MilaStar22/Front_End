@@ -1,0 +1,370 @@
+@mixin container {
+  width: calc(100% - 30px);
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@mixin title {
+  height: 60px;
+  position: relative;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: #DDDBDB;
+    left: 40%;
+  }
+}
+@mixin role_description {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+@mixin flex-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+$svg_color: #fff;
+$svg_color_hover: #18B5DC;
+.container {
+  @include container;
+}
+body {
+  header {
+    .header_wrapper {
+      height: 80px;
+      display: grid;
+      grid-template-columns: 170px 1fr 130px;
+      align-items: center;
+      .header_menu {
+        display: flex;
+        justify-content: center;
+        ul {
+          display: flex;
+          gap: 30px;
+          a {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #3C3C3C;
+            text-decoration: unset;
+            &:hover {
+              color: $svg_color_hover;
+            }    
+          }
+          .link-about {
+            position: relative;
+            img {
+              position: absolute;
+              bottom: -20px;
+            }
+          }
+        }
+      }
+      .btn button {
+        @include flex-position;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #3C3C3C;
+        max-width: 130px;
+        width: 100%;
+        height: 42px;
+        background-color: $svg_color;
+        border: 1px solid #3C3C3C;
+        &:hover {
+          background-color: $svg_color_hover;
+          color: $svg_color;
+          border: 1px solid $svg_color_hover;
+        }
+      }
+      .burger {
+        display: none;
+        span {
+          display: block;
+          width: 46px;
+          height: 5px;
+          background-color: black;
+          &:before, &:after {
+            position: relative;
+            content: "";
+            display: block;
+            width: 46px;
+            height: 4px;
+            background-color: rgb(54, 53, 53);
+          }
+          &:after {
+            bottom: -4px;
+          }
+          &:before {
+            top: -7px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .about {
+      @include container;
+      background-color: #F6F6F6;
+      padding: 150px 0px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .section_top {
+        text-align: center;
+        width: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .about_title {
+          @include title;
+        }
+        .about_subtitle {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #3C3C3C;
+          padding-top: 40px;
+        }
+      }
+      &_items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding-top: 60px;
+        .item {
+          .photo {
+            position: relative;
+            @include flex-position;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            .social {
+              position: absolute;
+              @include flex-position;
+              width: 100%;
+              height: 100%;
+              background-color: $svg_color_hover;
+              opacity: 0;
+              gap: 4px;
+              &:hover {
+                opacity: 1;
+              }
+              .social_item {
+                @include flex-position;
+                width: 42px;
+                height: 42px;
+                background-color: #5DCBE6;
+                svg {
+                  height: 20px;
+                  width: 20px;
+                  fill: $svg_color;
+                }
+                &:hover {
+                  background-color: $svg_color;
+                  svg {
+                    fill: $svg_color_hover;
+                  }
+                }
+              }
+            }
+          }
+          &_name {
+            @include role_description;
+            font-weight: 700;
+            color: #282528;
+            padding-top: 20px;
+          }
+          &_role {
+            @include role_description;
+            font-weight: 300;
+            color: #646464;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer_wrapper {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      height: 260px;
+      background-color: $svg_color;
+      padding: 40px 0px;
+      .footer_menu {
+        display: flex;
+        justify-content: center;
+        ul {
+          display: flex;
+          gap: 30px;
+          a {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #3C3C3C;
+            text-decoration: unset;
+            &:hover {
+              color: $svg_color_hover;
+            }    
+          }
+          .link-contacts {
+            position: relative;
+            img {
+              position: absolute;
+              bottom: -20px;
+            }
+          }
+        }
+      }
+      .footer_social {
+        @include flex-position;
+        gap: 10px;
+        .social_item {
+          @include flex-position;
+          width: 42px;
+          height: 42px;
+          background-color: $svg_color;
+          border: 1px solid $svg_color_hover;
+          svg {
+            height: 20px;
+            width: 20px;
+            fill: $svg_color_hover;
+          }
+          &:hover {
+            background-color: $svg_color_hover;
+            svg {
+              fill: $svg_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  body header .header_wrapper {
+    height: auto;
+    gap: 5px;
+    grid-template-columns: 1fr 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo burger btn"
+                         "menu menu menu";
+    .logo {
+      grid-area: logo;
+    }
+    .header_menu {
+      transition: .3s ease all;
+      overflow: hidden;
+      height: 0;
+      grid-area: menu;
+      justify-content: flex-start;
+      ul {
+        flex-direction: column;
+        gap: 15px;
+        .link-about img {
+          display: none;
+        }
+      }
+    }
+    .header_menu_active{
+      overflow: unset;
+      height: auto;
+    }
+    .btn {
+      grid-area: btn;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .burger {
+      grid-area: burger;
+      display: flex;
+    }
+  }
+  body main .about {
+    padding: 70px 0;
+    .section_top {
+      width: 420px;
+      }
+    .about_items {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    padding: 10px 15px;
+  }
+  body {
+    header .header_wrapper .header_menu ul {
+      gap: 15px;
+      a {
+        font-size: 15px;
+      }
+    }
+    main .about {
+      padding: 70px 0px;
+      .section_top {
+        width: 285px;
+        .about_title {
+          font-size: 28px;
+          line-height: 34px;      
+        }
+        .about_subtitle {
+          font-size: 14px;
+          line-height: 20px;
+          padding-top: 30px;
+        }
+      }
+      .about_items {
+        grid-template-columns: 1fr;
+      }
+    }
+    footer .footer_wrapper {
+      padding: 20px 10px;
+      .footer_menu ul {
+        gap: 15px;
+        a {
+          font-size: 15px;
+        }
+      }
+      .footer_social .social_item {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
