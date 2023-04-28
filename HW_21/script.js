@@ -17,6 +17,7 @@ console.log(+str + num);
 let fleshDriveSize = +prompt('Введіть обсяг флешки у Гб:', '');
 alert(`На флешку поміститься: ${Math.floor(fleshDriveSize * 1024 / 820)} файл(и) розміром 820 Мб.`);
 */
+
 // Норма
 /*
 1. Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
@@ -24,8 +25,8 @@ let sumOfMoney = +prompt('Введіть суму грошей в гаманці
 let priceOfOneChocolade = +prompt('Введіть ціну однієї шоколадки:', '');
 alert(`Ви можете купити ${Math.floor(sumOfMoney / priceOfOneChocolade)} шоколадок. Ваша решта: ${sumOfMoney % priceOfOneChocolade}`);
 */
-/*
-2. Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
+
+//2. Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
 let number = prompt('Введіть тризначне число:', '');
 // Variant 1
 let result = '';
@@ -36,20 +37,48 @@ result += secondDigit;
 let lastDigit = Math.floor(+number / 100);
 result += lastDigit;
 console.log(result);
-*/
+
 //Variant2 
-//alert(number.split("").reverse().join(""));
+alert(number.split("").reverse().join(""));
+
 // Variant 3
-// let num = prompt('Введіть тризначне число:', '');
-// function getReversedNum(num) {
-//   let result = 0; 
-//   while (num) {
-//     result = result * 10 + num % 10; 
-//     num = Math.floor(num / 10); 
-//   }
-//   return result;
-// }
-// console.log(getReversedNum(num));
+function getReversedNum(number) {
+  let result = 0; 
+  while (number) {
+    result = result * 10 + number % 10; 
+    number = Math.floor(number / 10); 
+  }
+  return result;
+}
+console.log(getReversedNum(number));
+
+//Variant 3
+let finalResult = doingReverse(number);
+
+function doingReverse(anynumber) {
+  if (anynumber.length < 2) {
+    return number;
+  }
+  let result = "";
+  let tempNumb = +anynumber;
+  for (i = 0; i < anynumber.length; i++) {
+    if (tempNumb >= 10) {
+      result += tempNumb % 10; // вертає останнє значення числа
+      tempNumb = checkNumb(tempNumb);
+    } else {
+      result += tempNumb;
+    }
+  };
+  return +result;
+};
+
+function checkNumb(num)  {
+  let resultFunc;
+  resultFunc = ((num - (num % 10)) / 10); // вертає число, менге на розряд
+  return resultFunc;
+}
+console.log(finalResult);
+
 //Максимум
 /*
 1. Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
