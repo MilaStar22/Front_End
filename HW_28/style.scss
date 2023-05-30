@@ -1,0 +1,178 @@
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #2B3040;
+  .background {
+    position: absolute;
+    width: 1000px;
+    height: 860px;
+    left: calc(50% - 500px);
+    top: calc(50% - 440px);
+    z-index: -1;
+    .content {
+      position: absolute;
+      width: 600px;
+      height: 552px;
+      left: calc(50% - 300px);
+      top: calc(50% - 276px);
+      z-index: 1;
+      background-color: #212534;
+      .slider-nav {
+        display: flex;
+        width: 600px;
+        height: 120px;
+        background-color: #2B3040;
+        .nav-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;  
+          gap: 15px;
+          width: 33%;
+          height: 120px;
+          svg {
+            width: 24px;
+            height: 22px;
+            stroke: #8D91A3;
+            &:active {
+              stroke: white;
+              fill: white;
+            }
+          }
+          p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #8D91A3;
+            &:active {
+              color: white;
+            }
+          }
+        }
+      }
+      .slider-for {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        height: 432px;
+        gap: 41px;
+        .photo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-left: 40px;
+          .stars {
+            display: flex;
+            margin-top: 25px;
+            gap: 10px;
+            svg {
+              width: 20px;
+              height: 20px;
+            }  
+          }
+        }
+        .about {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding-right: 40px;
+          h1 {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 32px;
+            color: #FFFFFF;
+            padding-bottom: 15px;
+          }
+          p.subtitle {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding-bottom: 40px;
+          }
+          p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #B7BACD;
+            padding-bottom: 52px;
+          }
+          .score {
+            position: absolute;
+            right: 40px;
+            top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 1px solid #1AE780;
+            z-index: 2;
+            p {
+              position: absolute;
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 22px;
+              text-align: center;
+              color: #B7BACD;
+              top: 26px;
+            }
+          }
+          .to-buy {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            .price {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              span {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #FFDD3F;
+              }
+              h2 {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                color: #FFFFFF;
+              }
+            }
+            .button {
+              button {
+                background: #13E28D;
+                padding: 20px 30px;
+                color: #fff;
+                border-radius: 2px;
+                line-height: 20px; 
+                font-size: 16px;             }
+            }
+          }
+        }
+      }
+    }
+  }
+}
