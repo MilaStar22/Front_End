@@ -1,4 +1,4 @@
-//Хедер скролл sticky
+//Header scroll sticky
 let element = document.querySelector('.header');
 window.addEventListener('scroll', function () {
   if (window.scrollY > 53) {
@@ -19,7 +19,7 @@ const about_slider = new Swiper('.about-slider', {
   },
 });
 
-// перехід по якорям +  плавний скрол
+// anchor transition + smooth scroll
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
@@ -51,13 +51,12 @@ window.onscroll = () => {
   });
 };
 
-// галерея каринок
+// gallery
 Fancybox.bind('[data-fancybox="gallery"]', {
-  // Your custom options
 });
 
 
-//Слайдер для секції news 
+//Slider for section news 
 
 const news_slider = new Swiper('.news-slider', {
   direction: 'horizontal',
@@ -102,5 +101,3 @@ function initMap() {
   });
 }
 window.initMap = initMap;
-
-// key = AIzaSyDlZQJXVvR26wkXhgi02j3VnPL3DpyfdKI

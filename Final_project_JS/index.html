@@ -268,17 +268,17 @@
         <img src="images/bg_contacts.svg" alt="background_img"> 
         <h2 class="title">GET IN TOUCH</h2>
         <div class="contacts_info">
-          <div class="info">
+          <ul class="info">
             <li><svg><use xlink:href="#location"></use></svg><a href="https://www.google.com/maps/place/Homewood+Suites+by+Hilton+Boston+Seaport+District/@42.3440055,-71.0377423,17z/data=!3m1!4b1!4m9!3m8!1s0x89e37bd14d3161c3:0x1e29d3109b943c59!5m2!4m1!1i2!8m2!3d42.3440055!4d-71.0377423!16s%2Fg%2F11jtbmr2yh">91 Nolan Extensions Suite 670</a></li>
             <li><svg><use xlink:href="#phone"></use></svg><a href="tel:+001 356-868-2454">001 356-868-2454</a></li>
             <li><svg><use xlink:href="#email"></use></svg><a href="mailto:montichello@service.com">montichello@service.com</a></li>
             <li><svg><use xlink:href="#time"></use></svg><a href="/">From 07:05AM to 19:30PM</a></li>
-          </div>
-          <div class="form">
-            <div class="input_text"><input type="text" placeholder="Mollie Medina"></div>
-            <div class="input_email"><input type="email" placeholder="Email"></div>
-            <div class="input_button"><input type="button" value="SUBMIT"></div>
-          </div>
+          </ul>
+          <form action="" method="POST" class="form">
+            <div class="input_text"><input type="text" name="name" minlength="3" placeholder="Mollie Medina" required></div>
+            <div class="input_email"><input type="email" name="email" minlength="5" placeholder="Email" required></div>
+            <div class="input_button"><input type="submit" value="SUBMIT"></div>
+          </form>
         </div>
       </div>
    </section>
