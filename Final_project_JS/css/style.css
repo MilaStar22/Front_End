@@ -366,7 +366,7 @@ body .header .header-wrapper .navigation nav ul a {
   align-items: center;
   gap: 14px;
   height: 54px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -450,7 +450,7 @@ body main .about .about-slider .swiper-slide .content {
   gap: 20px;
 }
 body main .about .about-slider .swiper-slide .content h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -459,7 +459,7 @@ body main .about .about-slider .swiper-slide .content h2 {
   color: #FFFFFF;
 }
 body main .about .about-slider .swiper-slide .content p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -531,7 +531,7 @@ body main .project .project-title:before {
   top: 0;
 }
 body main .project .project-title h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -595,7 +595,7 @@ body main .project .project-section .about_item .subtitle {
   text-transform: uppercase;
 }
 body main .project .project-section .about_item .title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -604,7 +604,7 @@ body main .project .project-section .about_item .title {
   text-transform: uppercase;
 }
 body main .project .project-section .about_item p {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -612,7 +612,7 @@ body main .project .project-section .about_item p {
   color: #2C4058;
 }
 body main .project .project-section .about_item .button button {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -635,7 +635,7 @@ body main .project .project-section .about_item .map-link span svg {
   fill: #2C4058;
 }
 body main .project .project-section .about_item .map-link a {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "sans-serif";
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -668,7 +668,7 @@ body main .news .wrapper .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -734,7 +734,7 @@ body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_te
   padding: 20px;
 }
 body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_text h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -743,7 +743,7 @@ body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_te
 }
 body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_text p {
   padding: 15px 0 30px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -764,7 +764,7 @@ body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_te
 }
 body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_text .description h4 {
   padding: 10px 0 0 80px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -773,7 +773,7 @@ body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_te
 }
 body main .news .wrapper .news-slider .swiper-slide .cards .cards_items .news_text .description p {
   padding: 6px 0 10px 80px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -842,7 +842,7 @@ body main .gallery .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -927,7 +927,7 @@ body main .contacts .contacts_form .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -974,7 +974,7 @@ body main .contacts .contacts_form .contacts_info .info li svg {
 body main .contacts .contacts_form .contacts_info .info a {
   display: flex;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -994,7 +994,7 @@ body main .contacts .contacts_form .contacts_info .form .input_text {
 }
 body main .contacts .contacts_form .contacts_info .form .input_text input {
   border: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1008,7 +1008,7 @@ body main .contacts .contacts_form .contacts_info .form .input_email {
 }
 body main .contacts .contacts_form .contacts_info .form .input_email input {
   border: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1023,7 +1023,7 @@ body main .contacts .contacts_form .contacts_info .form .input_button input {
   border: 1px solid black;
   padding: 5px 20px;
   float: right;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1059,7 +1059,7 @@ body footer .footer-wrapper .navigation .logo_footer {
   align-items: flex-start;
 }
 body footer .footer-wrapper .navigation .logo_footer p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
