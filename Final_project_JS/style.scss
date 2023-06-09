@@ -1,7 +1,7 @@
 @import "css/reset";
 @mixin container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 @mixin flex {
@@ -20,38 +20,58 @@ body {
       @include container;
       .navigation {
         display: grid;
-        grid-template-columns: 241px 1fr 160px;
-        nav ul {
+        grid-template-columns: 241px 1fr 150px 0px;
+        nav {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin: 0 auto;
-          max-width: 515px;
-          width: 100%;
-          a {
+          ul {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 14px;
-            height: 54px;
-            font-family: 'Source Sans Pro', 'sans-serif';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            text-transform: uppercase;
-            color: #fff;
-            text-decoration: none;
-            &:before {
-              content: '';
-              display: inline-block;
-              width: 9px;
-              height: 9px;
-              border-radius: 50%;
-              border: 1px solid #fff;
+            margin: 0 auto;
+            max-width: 515px;
+            width: 100%;
+            .nav-link {
+              display: flex;
+              align-items: center;
+              gap: 14px;
+              height: 54px;
+              font-family: 'Source Sans Pro', sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+              color: #fff;
+              text-decoration: none;
+              &:before {
+                content: '';
+                display: inline-block;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+              }
+              &:hover {
+                color: #482ff7;
+              }
+            }
+            .nav-link.active:before {
+              background-color: #fff;
             }
           }
-          a.active:before {
-            background-color: #fff;
+        }
+        .hamburger {
+          display: none;
+          .bar {
+            display: block;
+            width: 45px;
+            height: 4px;
+            margin: 10px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #FFFFFF;
           }
         }
         .social {
@@ -747,7 +767,7 @@ body {
 }
 @media only screen and (max-width: 1230px) {
   body .header .header-wrapper .navigation {
-    grid-template-columns: 0.7fr 1fr 0.5fr;
+    grid-template-columns: 0.7fr 1fr 0.5fr 0px;
     justify-content: center;
 }
   body main .project .project-section {
@@ -780,21 +800,53 @@ body {
 }
 @media only screen and (max-width: 890px) {
   body .header .header-wrapper .navigation {
-    grid-template-columns: 350px 300px;
-    grid-template-rows: 70px 80px;
-    grid-template-areas: "logo social"
-                         "nav nav";
+    grid-template-columns: 350px 300px 100px;
+    grid-template-areas: "logo social hamburger"
+                         "nav nav nav";
+    .hamburger {
+      grid-area: hamburger;
+      display: block;
+      cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(14px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-14px) rotate(-45deg);
+    }
     .logo {
       grid-area: logo;
     }
-    .nav {
+    .navbar {
       grid-area: nav;
       display: flex;
       align-items: center;
+      .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background: rgba(108, 49, 236, 0.9);
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.5s ease;
+      }
+    }
+    .nav-menu.active {
+      right: 0;
+      transform: translate(-25%, 0%);
+      height: 40vh;
+    }
+    .nav-menu a:before {
+      border: transparent !important;
     }
     .social {
       grid-area: social;
       align-items: flex-start;
+      display: none;
     }
   }
 }
