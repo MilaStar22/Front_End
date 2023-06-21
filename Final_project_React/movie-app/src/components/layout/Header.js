@@ -4,6 +4,7 @@ import Search from "./Search";
 import logo from "../img/logo.png";
 // import { getFabUtilityClass } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import sprite from "../img/sprites.svg";
 
 const links = [
     {
@@ -47,16 +48,21 @@ function Header() {
           <img src={logo} alt="logo"></img>
         </div>
         <MainMenu links={links}/>
+
+        <div className="btn">
+          <button><svg><use href={sprite + "#favorite"} /></svg></button>
+          <button><svg><use href={sprite + "#search"} /></svg></button>
+          <button><svg><use href={sprite + "#user_cabinet"} /></svg></button>
+        </div>
+
+
         <div className="search">
-          {/* <input type="text" /> */}
           <Search />
         </div>
         <div 
-          className={isBurgerActive ? "burger-menu active" : "burger-menu"} 
+          className={isBurgerActive ? "burger-menu burger-menu-active" : "burger-menu"} 
           onClick={toggleBurger}
         >
-          <span></span>
-          <span></span>
           <span></span>
         </div>
       </div>

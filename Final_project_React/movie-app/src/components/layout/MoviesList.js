@@ -8,7 +8,7 @@ import defaultImage from "../img/default_img.png";
 
 const baseURL = 'https://api.themoviedb.org/3/discover/movie/';
 const baseSearchURL = 'https://api.themoviedb.org/3/search/movie';
-const apiKey = 'b03d508a9e788070ca877f98f3f8bbba';
+const apiKey = '307fd0a82be6c313814e4ab1e538e172';
 const imgBaseURL = "https://image.tmdb.org/t/p/w500";
 const genresURL = 'https://api.themoviedb.org/3/genre/movie/list';
 

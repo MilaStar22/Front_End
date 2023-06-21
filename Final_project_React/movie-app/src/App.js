@@ -28,7 +28,7 @@ function App() {
         <Route path="/contacts" element={<ContactsPage />} />
         {/* <Route path="/contacts" element={<WishListPage />} /> */}
         <Route path="*" element={<NotFoundPage />} />
-        <Route path="*" element={<ForbiddenPage />} />
+        <Route path="/access denied" element={<ForbiddenPage />} />
       </Route>
       </Routes>
   )
